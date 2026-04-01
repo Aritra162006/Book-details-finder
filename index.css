@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("bg.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h1{
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#searchInput{
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    width: 500px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#searchButton{
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 2px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.card {
+    color: #fff;
+    text-align: center;
+}
+
+.card h2,
+.card p {
+    color: #fff;
+}
