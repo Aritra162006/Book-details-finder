@@ -1,58 +1,102 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-image: url("bg.webp");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-}
-
-h1{
-    font-size: 4rem;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-#searchInput{
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    width: 500px;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-#searchButton{
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #fff;
-    border: 2px black solid;
-    border-radius: 5px;
-    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
-#results {
-    margin-top: 20px;
-}
-
-.card {
+h1{
+    font-size: 3rem;
     color: #fff;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.card h2,
-.card p {
+#searchInput{
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    width: 300px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#searchButton,
+#sortBtn{
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#searchButton:hover,
+#sortBtn:hover{
+    background-color: #ddd;
+}
+
+#results {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
     color: #fff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.card button:hover {
+    background-color: #e60039;
 }
